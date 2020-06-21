@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-orange}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+\vspace{-16mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Vishalkrishna}{Bhosle}
+\address{H.No: 8-9-520, KRISHNA, Near New Bus Stand, Devi Colony, Bidar-585401 }
+\mobile{(+91) 9900680654} 
+%%% Social
+\email{vishalkrishna.bhosle@gmail.com}
+%%%\homepage{www.posquit0.com}
+\github{VishalkrishnaBlaze}
+\linkedin{vishalkrishnab}
+%%% Optionals
+%\position{Software Engineering Intern}
+%%%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+%%%\quote{``Make the change that you want to see in the world."}
+\usepackage{comment}
+% ...
+\begin{comment}
+ Python, Java, J2EE, BackboneJS, C, C++, HTML , PHP , Javascript , BackboneJS , ExtJS , Hadoop , MapReduce, JMockit, MochaJS, Mocha.js SinonJS, sinon.js, mustache.js, mustache, Apache Solr , MySQL, PostgreSQL, Docker, Amazon Web Services, AWS, Jboss, NodeJS , Django , Grunt , MPLS , Qt , IBM DB2 , Machine Learning , EC2 , EMR
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+%\makecvfooter
+ % {\today}
+ % {Vishalkrishna Bhosle~~~·~~~Résumé}
+
+ % {\thepage}
+ 
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{skill.tex}
+\import{\sectiondir}{courses.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{writings.tex}
+\import{\sectiondir}{extracurricular.tex}
+%\import{\sectiondir}{presentation.tex}
+%\import{\sectiondir}{committees.tex}
+
+\end{document}
